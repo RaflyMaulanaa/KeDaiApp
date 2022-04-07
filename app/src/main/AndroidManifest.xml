@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="co.id.kedai.kedaiapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KeDaiApp"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".ui.activity.CaraMendaftarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SteJadwalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SteMenuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CheckPaidActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.RegistrationSuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SteRegistrationActivity3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SteRegistrationActivity2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SteRegistrationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.OnBoardingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.PdfReaderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
